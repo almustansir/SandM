@@ -1,2 +1,1 @@
-# SandM
- 
+# S&M Garments
