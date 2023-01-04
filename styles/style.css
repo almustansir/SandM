@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sen&display=swap');
 
 
+body {
+  margin: 0;
+}
 /* navbar design */
 .navbar {
     background: #407EE3;
@@ -116,4 +119,68 @@
     margin: 50px 0px 50px 50px;
     display: flex;
     justify-content: space-around;
+  }
+
+  /* contect us design */
+  .contact {
+    background: #D6D6D7;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .left {
+    width: 50%;
+    margin-left: 135px;
+}
+
+.left h3 {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.left p {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.right {
+    width: 50%;
+    margin-right: 135px;
+  }
+
+  .right p {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  .right span {
+    font-size: 49px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  /* footer design */
+  .footer {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
   }
