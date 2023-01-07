@@ -5,36 +5,31 @@ body {
   margin: 0;
 }
 
-/* li {
-  list-style: none;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-} */
-
 /* navbar design */
 .navbar {
-    background: #407EE3;
+    background: #A6C3F2;
 }
 
 .navbar-brand {
-    font-family: 'Sen';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px !important;
-    line-height: 54px;
-    color: #000000;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px !important;
+  line-height: 54px;
+  color: #000000;
 }
 
 .nav-link {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #D9D9D9;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1E1E1E;
+}
+
+.nav-link:hover {
+  color: #407EE3;
 }
 
 .hamburger {
