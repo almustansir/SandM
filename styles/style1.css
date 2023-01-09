@@ -41,7 +41,9 @@ body {
 }
 
 .nav-link:hover {
-  color: #000;
+    font-size: 30px;
+    color: #000;
+    transition: .5s;
 }
 
 .hamburger {
@@ -211,12 +213,44 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
-    /* make things for tab */
+    .hamburger {
+        display: block;
+      }
+  
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+  
+      .navbar-nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A6C3F2;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+  
+      .nav-link {
+        margin: 16px 0;
+      }
+  
+      .navbar-nav.active {
+        left: 0;
+        text-align: center;
+      }
 }
 
 
 /* trending section design */
-
 .trending_section {
     margin: 50px 0 70px 0;
 }
@@ -417,7 +451,7 @@ h2{
 
   .right span a:hover {
     color: #A6C3F2;
-    transition: 1s;
+    transition: .5s;
   }
 
   /* footer design */
