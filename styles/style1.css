@@ -102,7 +102,7 @@ body {
 /* for manual slides navigation */
 .navigation-manual {
     position: absolute;
-    width: 1150px;
+    width: 100%;
     margin-top: -50px;
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ body {
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: 1150px;
+    width: 100%;
     justify-content: center;
     margin-top: 700px;
 }
@@ -212,43 +212,6 @@ body {
     margin-right: 40px;
 }
 
-@media screen and (max-width: 1150px) {
-    .hamburger {
-        display: block;
-      }
-  
-      .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-      }
-      .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-  
-      .navbar-nav{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #A6C3F2;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-      }
-  
-      .nav-link {
-        margin: 16px 0;
-      }
-  
-      .navbar-nav.active {
-        left: 0;
-        text-align: center;
-      }
-}
-
 
 /* trending section design */
 .trending_section {
@@ -269,7 +232,6 @@ h2{
 
 .card-block{
 	height: 300px;
-	/* background-color: #fff; */
 	border: none;
 	background-position: center;
 	background-size: cover;
@@ -335,8 +297,8 @@ h2{
     color: #FFFFFF;
 }
 
-/* sale section */
-.catagories_section {
+/* categories section design */
+.categories_section {
     margin: 70px 0;
 }
 
@@ -470,3 +432,249 @@ h2{
     margin-bottom: 0px !important;
    }
    
+
+   @media screen and (max-width: 1150px) {
+    .hamburger {
+        display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .navbar-nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #A6C3F2;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+  
+    .nav-link {
+        margin: 16px 0;
+    }
+  
+    .navbar-nav.active {
+        left: 0;
+        text-align: center;
+    }
+
+      /* hero slider design */
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first {
+        margin-left: -30%;
+    }
+    
+    #radio3:checked ~ .first {
+        margin-left: -60%;
+    }
+
+    /* sale section design */
+    .sales {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card p {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        color: #fff;
+    }
+
+    /* Promo design */
+    .promo_section {
+        padding: 50px;
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video {
+        margin: 20px;
+    }
+
+    .description {
+        margin-left: 20px;
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    /* contect us design */
+    .left h3 {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .left p {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .right {
+        width: 50%;
+        margin-right: 100px;
+    }
+
+    .right p {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .right span {
+        font-size: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-right: 70px;
+    }
+
+    /* footer design */
+    .footer {
+        background-color: #A6C3F2;
+        color: #1E1E1E;
+        text-align: center;
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* sale section design */
+    .sales_section {
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        overflow: hidden;
+    }
+
+    .sales {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card a {
+        text-decoration: none;
+        background-color: #1E1E1E;
+    }
+
+    .card p {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1px;
+        color: #fff;
+    }
+
+    .sales div {
+        border-radius: 50px;
+    }
+
+    .sales div:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    /* Promo design */
+    .promo_section {
+        padding: 50px;
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video {
+        margin: 20px;
+    }
+
+    .video iframe {
+        width: 480px;
+    }
+
+    .description {
+        margin-left: 20px;
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    /* contect us design */
+    .left {
+        margin-left: 70px;
+    }
+
+    .left h3 {
+        font-size: 28px;
+    }
+
+    .left p {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .right {
+        width: 50%;
+        margin-right: 70px;
+    }
+
+    .right p {
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .right span {
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-right: 70px;
+    }
+
+}
